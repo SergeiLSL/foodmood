@@ -1,1 +1,30 @@
 // Заголовки, общие БЄМ блоки и проче...
+.subtitle {
+	@include adaptiveValue("font-size", 18, 15);
+	color: #ffcc00;
+	text-transform: uppercase;
+	text-align: center;
+}
+// .team__title
+.title {
+	position: relative;
+	@include adaptiveValue("font-size", 55, 35);
+	line-height: 1.49; /* 82/55 */
+	color: #000;
+	text-align: center;
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 25, 15);
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 18%;
+		border: 4px solid #ffcc00;
+		bottom: rem(-25);
+		left: 50%;
+		transform: translate(-50%, 0%);
+		@media (max-width:$mobileSmall){
+			width: 28%;
+		}
+	}
+}
