@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"Food Mood"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Food Mood"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="page__team team">
+				<div class="team__container">
+					<div class="team__inner">
+						<div class="team__subtitle">TEAM MEMBERS</div>
+						<div class="team__title">Meet Our Best Team</div>
+						<div class="team__content">
+							<div class="team__item">
+								<div class="team__card">
+									<div class="team__image">
+										<img src="@img/team/01.jpg" alt="">
+									</div>
+									<div class="team__name">Alizeh Anderson</div>
+									<div class="team__speciality">Senior Chef</div>
+								</div>
+								<div class="team__card">
+									<div class="team__image">
+										<img src="@img/team/02.jpg" alt="">
+									</div>
+									<div class="team__name">Angelina John</div>
+									<div class="team__speciality">Master Chef</div>
+								</div>
+								<div class="team__card">
+									<div class="team__image">
+										<img src="@img/team/03.jpg" alt="">
+									</div>
+									<div class="team__name">Andre Smith</div>
+									<div class="team__speciality">Professor</div>
+								</div>
+								<div class="team__card">
+									<div class="team__image">
+										<img src="@img/team/04.jpg" alt="">
+									</div>
+									<div class="team__name">Christina Chi</div>
+									<div class="team__speciality">Psychologist</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__discount discount">
+				<div class="discount__container">
+					<div class="discount__inner">
+						<div class="discount__item">
+							<div class="discount__block">
+								<div class="discount__title">Get 20% Discount</div>
+								<div class="discount__text">Get flat 20% off on your first order though The Foodmood
+									App!</div>
+								<div class="discount__logos">
+									<div class="discount__logo">
+										<img src="@img/discount/google.svg" alt="google logo">
+									</div>
+									<div class="discount__logo">
+										<img src="@img/discount/app.svg" alt="app logo">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="discount__item">
+							<div class="discount__image">
+								<img src="@img/discount/mobile.png" alt="mobile image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__partners partners">
+				<div class="partners__container">
+					<div class="partners__inner">
+						<div class="partners__item">
+							<img src="@img/partners/01.png" alt="logo">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/02.png" alt="logo">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/03.png" alt="logo">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/04.png" alt="logo">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
