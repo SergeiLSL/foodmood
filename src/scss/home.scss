@@ -67,6 +67,7 @@
 		@media (max-width: $tablet) {
 			flex-wrap: wrap;
 			justify-content: center;
+			gap: rem(50);
 		}
 	}
 	// .categories__card
@@ -248,7 +249,7 @@
 			flex: 0 1 45%;
 		}
 		@media (max-width: rem(676)) {
-			flex: 0 1 90%;
+			flex: 0 1 100%;
 			//justify-content: center;
 		}
 	}
@@ -483,7 +484,7 @@
 			flex: 0 1 45%;
 		}
 		@media (max-width: rem(676)) {
-			flex: 0 1 90%;
+			flex: 0 1 100%;
 		}
 	}
 	// .team__image
