@@ -1,4 +1,7 @@
 .page {
+	// .page__first
+	&__first {
+	}
 	// .page__categories
 	&__categories {
 	}
@@ -22,11 +25,97 @@
 	}
 }
 //====================================================================================================
+// .page__first
+.first {
+	// .first__container
+	&__container {
+	}
+	// .first__inner
+	&__inner {
+		position: relative;
+	}
+	// .first__content
+	&__content {
+		position: absolute;
+		left: 0;
+		z-index: 5;
+		@include adaptiveValue("top", 149, 70);
+		color: #fff;
+	}
+	// .first__box
+	&__box {
+		display: flex;
+		flex: 0 1 67.16%;
+		flex-direction: column;
+	}
+	// .first__price
+	&__price {
+		@include adaptiveValue("font-size", 26, 16);
+		font-weight: 600;
+		line-height: 1.5; /* 39/26 */
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 25, 10);
+		}
+	}
+	// .first__title
+	&__title {
+		@include adaptiveValue("font-size", 64, 20);
+		font-weight: 600;
+		line-height: 1.5; /* 96/64 */
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 25, 10);
+		}
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("gap", 29, 10);
+	}
+	// .first__discount
+	&__discount {
+		font-weight: 700;
+		font-size: rem(32);
+		@include adaptiveValue("font-size", 36, 16);
+		line-height: 1.55; /* 96/62 */
+		@include adaptiveValue("width", 205, 70);
+		@include adaptiveValue("height", 205, 70);
+		border-radius: 50%;
+		background: #ffcc00;
+		text-align: center;		
+	}
+	// .first__desc
+	&__desc {
+		@include adaptiveValue("font-size", 36, 10);
+		font-weight: 600;
+		line-height: 1.5; /* 54/36 */
+		@include adaptiveValue("max-width", 324, 170);
+	}
+	// .first__button
+	&__button {
+		@include adaptiveValue("margin-top", 79, 30);
+	}
+	// .first__image-ibg
+	&__image-ibg {
+		padding-top: 80%;
+		height: 100%;
+		// @media (max-width: rem(1100)){
+		// 	padding-top: 75%;
+		// }
+
+		// @media (max-width:$tablet){
+		// 	padding-top: 70%;
+		// }
+		// @media (max-width:$mobileSmall){
+		// 	padding-top: 90%;
+		// }
+		// //position: relative;
+	}
+}
 
 //========================================================================================================================================================
 // .page__categories
 .categories {
-	@include adaptiveValue("padding-top", 77, 40);
+	@include adaptiveValue("padding-top", 27, 25);
 	@include adaptiveValue("padding-bottom", 65, 40);
 	// .categories__container
 	&__container {
@@ -103,17 +192,16 @@
 	// .categories__name
 	&__name {
 		font-size: rem(24);
-		line-height: 1.50; /* 36/24 */
+		line-height: 1.5; /* 36/24 */
 		font-weight: 700;
 	}
 	// .categories__desc
 	&__desc {
 		font-size: rem(20);
-		line-height: 1.50; /* 30/20 */
+		line-height: 1.5; /* 30/20 */
 		font-weight: 600;
 	}
 }
-
 
 //========================================================================================================================================================
 // .page__servises

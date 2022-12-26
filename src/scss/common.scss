@@ -28,3 +28,27 @@
 		}
 	}
 }
+
+.button { // в common.scss
+	display: inline-block;//
+	font-size: rem(14);//
+	line-height: 1.50; /* 21/14 */
+	font-weight: 700;
+	color: #fff;//
+	text-transform: uppercase;
+	background: #FFCC00;
+	padding: rem(14) rem(46);
+	cursor: pointer;
+	top: 0;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background:#e7c331;
+	}
+	&:active {
+		background:#e7c331;
+		top: rem(3);
+	}
+	@media (max-width: $tablet) {
+		padding: rem(10) rem(20);
+	}
+}
