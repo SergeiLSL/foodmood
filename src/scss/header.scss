@@ -44,8 +44,8 @@
 		position: relative;//
 		z-index: 5;//
 		@media (max-width:$mobileSmall){
-			font-size: rem(32); 
-			padding: rem(20) rem(45);
+			font-size: rem(28); 
+			padding: rem(15) rem(25);
 		}
 	}
 }
@@ -85,7 +85,7 @@
 		font-weight: 700;
 		color: #fff;//
 		@media (max-width: $mobile) {
-			font-size: rem(32);
+			font-size: rem(28);
 		}
 		// красивое подчеркивание при hover
 		display: inline-block;
@@ -209,7 +209,7 @@
 		text-align: center;
 	}
 	.menu__link {
-		font-size: rem(32);
+		font-size: rem(28);
 	}
 	.menu-open .menu__body,
 	.menu-open .menu__body::before {
