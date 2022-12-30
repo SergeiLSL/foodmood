@@ -27,6 +27,7 @@
 //====================================================================================================
 // .page__first
 .first {
+	@include adaptiveValue("padding-bottom", 0, 150);
 	@media (max-width: rem(600)){
 		padding-bottom: rem(120);
 	}
@@ -54,6 +55,9 @@
 		display: flex;
 		flex: 0 1 67.16%;
 		flex-direction: column;
+		@media (max-width: rem(1200)){
+			flex: 0 1 90%;
+		}
 		@media (max-width: rem(600)){
 			flex: 0 1 100%;
 			color: #000;
@@ -119,7 +123,7 @@
 	}
 	// .first__image-ibg
 	&__image-ibg {
-		padding-top: 80%;
+		padding-top: 61.74%;
 		height: 100%;
 		@media (max-width: rem(600)){
 			display: none;
